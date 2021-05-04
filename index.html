@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Pascal Record Grammar</title>
+    <script src="handler.js"></script>
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="mainCard" class="card">
+        <form>
+            <div>
+                <div id="fLine">
+                    <table>
+                        <tr>
+                            <th>
+                                <label for="codeInput" class="form-label">Your code:</label>
+                                <textarea id="codeInput" class="form-control" cols="80" rows="16"
+                                    oninput="resetUi()"></textarea>
+                            </th>
+                            <th><label for="logTextArea" class="form-label">Log:</label>
+                                <textarea id="logTextArea" class="form-control" cols="16" rows="16" disabled></textarea>
+                            </th>
+                        </tr>
+                    </table>
+                </div>
+                <label for="resultInput" class="form-label">Result</label>
+                <input id="resultInput" class="form-control" disabled>
+                <div id="buttonsDiv">
+                    <button type="button" id="checkBtn" class="btn btn-primary" onclick="validUiCall()">Check</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
